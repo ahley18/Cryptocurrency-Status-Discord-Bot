@@ -3,6 +3,12 @@ const axios = require('axios')
 const Discord = require('discord.js')
 const client = new Discord.Client()
 
+//variables
+const coinID = 'vigorus';
+const guildID = '945335532219674634';
+//const clientID = '';
+const botSecret = 'OTYwMDY0ODUwNTE4NzU3Mzc2.YklAEQ.vHC2MrTw0DxvkCooNgSGgEfqLWs';
+
 function getPrices() {
 
 
@@ -41,4 +47,5 @@ client.on('ready', () => {
 })
 
 // Login to Discord
-client.login(process.env.DISCORD_TOKEN)
+//https://discord.com/api/oauth2/authorize?client_id=960064850518757376&permissions=0&scope=bot%20applications.commands
+client.login('${botSecret}')
